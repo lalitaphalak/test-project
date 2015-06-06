@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -41,5 +41,32 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+# gems specific for learn-rails
+
+# helps to use Rails without a database
+gem 'activerecord-tableless'
+# support for zurb-foundation
+gem 'compass-rails', '~> 2.0.alpha.0'
+# configuration framework
+gem 'figaro'
+# access to MailChimp API
+gem 'gibbon'
+# use Google Drive spreadsheets for data storage
+gem 'google_drive'
+# for static pages like “about”
+gem 'high_voltage'
+# easy forms
+gem 'simple_form'
+gem 'zurb-foundation'
+
+group :development do
+	#  helps when things go wrong
+	gem 'better_errors'
+	# suppresses distracting messages in the log
+	gem 'quiet_assets'
+	# generates files for an application layout
+	gem 'rails_layout'
 end
 
